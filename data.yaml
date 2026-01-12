@@ -1,0 +1,23 @@
+# YOLO 自定义数据集配置文件
+# 用于训练识别方块的模型
+
+# 数据集根路径（修改为你的实际路径）
+path: /Users/wanghao/Documents/2.AI_project/yolo12test/dataset
+
+# 训练集和验证集路径（相对于 path）
+train: images/train  # 训练图片目录
+val: images/val      # 验证图片目录
+test: images/test    # 测试图片目录（可选）
+
+# 类别数量
+nc: 1
+
+# 类别名称（按 ID 顺序）
+names:
+  0: square  # 如果要识别多种方块，可以改为：['red_square', 'blue_square', 'green_square']
+
+# 示例：识别红色和蓝色方块
+# nc: 2
+# names:
+#   0: red_square
+#   1: blue_square
